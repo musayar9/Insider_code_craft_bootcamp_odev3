@@ -85,7 +85,7 @@ h5 {
   margin-bottom: 2rem;
 }
 
-/* burada ürün kartları ekranın (90vh) kullanılarak %90 genişliğine  göre  grid_template_columns  özelliği kullanılarak 
+/* burada ürün kartları ekranın (90vw) kullanılarak %90 genişliğine  göre  grid_template_columns  özelliği kullanılarak 
 responsive yapıda düzenlendi */
 
 .product-grid {
