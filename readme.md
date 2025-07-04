@@ -1,10 +1,12 @@
 # Ödev 3
 
+## Demo: [Uygulama Demosu](https://responsive-product.netlify.app/)
+
 ## Sıfırdan Responsive Ürün Vitrini
 
 Bu projede HTML ve CSS kullanarak sıfırdan responsive (duyarlı) bir ürün listeleme vitrini oluşturdum. Her ürün, resim, isim, fiyat ve “Sepete Ekle” butonundan oluşan bir kart yapısında tasarlandı.
 
-Uygulama içinde CSS değişkenlerini `:root` içerisinde tanımladım ve bu değişkenleri stil dosyamın farklı bölümlerinde kullanarak bütünlüklü ve yönetilebilir bir yapı oluşturdum. Renk teması olarak ağırlıklı olarak `grey` tonlarını tercih ettim.  
+Uygulama içinde CSS değişkenlerini `:root` içerisinde tanımladım ve bu değişkenleri stil dosyamın farklı bölümlerinde kullanarak bütünlüklü ve yönetilebilir bir yapı oluşturdum. Renk teması olarak ağırlıklı olarak `grey` tonlarını tercih ettim.
 
 Tüm kartları, CSS Grid sistemiyle ve `grid-template-columns` özelliğini kullanarak responsive olacak şekilde düzenledim. Böylece 6 ürünü farklı ekran boyutlarına göre dinamik şekilde gösterebilen bir yapı ortaya çıkmış oldu.
 
@@ -40,10 +42,11 @@ Sayfa başlığını `h1` etiketi ile oluşturdum. Font boyutunu farklı ekran b
 }
 ```
 
-Bu CSS bloğu ile ürünleri bir grid düzeni içinde responsive şekilde yerleştirdim.  
-- `auto-fit`, ekran genişliğine sığabildiği kadar sütun yerleştirir.  
-- `minmax(350px, 1fr)`, her sütunun minimum 350px genişliğinde olmasını, uygun yer varsa 1fr kadar büyümesini sağlar.  
-- `max-width: 90vw` ile gridin genişliğini sınırlayarak sayfanın kenar boşluklarını korudum.  
+Bu CSS bloğu ile ürünleri bir grid düzeni içinde responsive şekilde yerleştirdim.
+
+- `auto-fit`, ekran genişliğine sığabildiği kadar sütun yerleştirir.
+- `minmax(350px, 1fr)`, her sütunun minimum 350px genişliğinde olmasını, uygun yer varsa 1fr kadar büyümesini sağlar.
+- `max-width: 90vw` ile gridin genişliğini sınırlayarak sayfanın kenar boşluklarını korudum.
 
 Böylece ekran küçüldükçe kartlar alta geçiyor, büyüdükçe yan yana diziliyor oldu.
 
@@ -181,12 +184,11 @@ Kartın üst kısmında ürün görseli yer alıyor. Resme `object-fit: cover` v
 
 ---
 
-
 ## Uygulama Görseli
 
 ![Ürün Vitrini Ekran Görüntüsü](/images/product.png)
 
-##  Not
+## Not
 
 Bu uygulamada **media query kullanmadan**, sadece `clamp()` ve `grid-template-columns` gibi modern CSS özelliklerini kullanarak responsive bir yapı oluşturmaya çalıştım. Hem görsel hem de kod yapısı olarak sade ve etkili bir vitrin hazırlamış oldum.
 
@@ -194,6 +196,6 @@ Bu uygulamada **media query kullanmadan**, sadece `clamp()` ve `grid-template-co
 
 ## Kullandığım Kaynaklar
 
-- [`clamp()` hakkında detaylı bilgi – MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp)  
-- [CSS Grid ve `minmax()` kullanımı – Ahmad Shadeed](https://ishadeed.com/article/css-grid-minmax/)  
+- [`clamp()` hakkında detaylı bilgi – MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp)
+- [CSS Grid ve `minmax()` kullanımı – Ahmad Shadeed](https://ishadeed.com/article/css-grid-minmax/)
 - [Gradient renkler için faydalı araç – CSS Gradient](https://cssgradient.io/)
